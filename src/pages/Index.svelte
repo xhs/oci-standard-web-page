@@ -44,6 +44,7 @@
       if (timingData.loadEventEnd > 0) {
         const seconds = (timingData.loadEventEnd - timingData.navigationStart) / 1000
         timeElapsed = seconds + ''
+        break
       }
       console.log('Polling load event')
       await sleep(1000)
