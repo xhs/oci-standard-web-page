@@ -1,5 +1,5 @@
 <div class="flex justify-center items-center w-screen h-screen app">
-  <div class="bg-white border-gray-500 shadow-lg sm:w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
+  <div class="bg-white border-gray-500 shadow-lg sm:w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
     <div class="h-1 strip"></div>
     <div class="content">
       <div class="flex justify-center">
@@ -47,7 +47,7 @@
         break
       }
       console.log('Polling load event')
-      await sleep(1000)
+      await sleep(500)
     }
   }
 
