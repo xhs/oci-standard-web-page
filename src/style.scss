@@ -1,0 +1,17 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.app {
+    background-color: #EFF1F4;
+}
+
+.strip {
+    background: linear-gradient(225deg, #53A0FD 0%, #B4EC51 100%);
+}
+
+.content {
+    padding: 50px 0;
+}
