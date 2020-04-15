@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "@webcomponents/custom-elements": "^1.4.1",
     "autoprefixer": "^9.7.6",
     "axios": "^0.19.2",

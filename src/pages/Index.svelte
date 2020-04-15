@@ -7,16 +7,16 @@
       </div>
       <div class="pt-20 pb-20 pl-5 pr-5 flex justify-center">
         {#if timeElapsed === '-'}
-        <div class="text-xl">
+        <div class="font-sans text-xl">
           Calculating...
         </div>
         {:else}
-        <div class="text-xl break-all">
-          It took <strong class="text-blue-500">{timeElapsed}s</strong> to fully load this page (~1.3MB unzipped).
+        <div class="font-sans text-xl break-all">
+          It took <strong class="text-blue-500">{timeElapsed}</strong> to fully load this page (~1.3MB unzipped).
         </div>
         {/if}
       </div>
-      <div class="pt-10 text-sm flex justify-center">
+      <div class="pt-10 font-sans text-sm flex justify-center">
         <div>Powered by</div>
         <div class="ml-1 w-5 h-5 text-red-500">
           <HeartIcon></HeartIcon>
@@ -43,7 +43,7 @@
       const timingData = window.performance.timing
       if (timingData.loadEventEnd > 0) {
         const seconds = (timingData.loadEventEnd - timingData.navigationStart) / 1000
-        timeElapsed = seconds + ''
+        timeElapsed = seconds + 's'
         break
       }
       console.log('Polling load event')
